@@ -1,3 +1,42 @@
+<head>
+    <% include ../helpers/head %>
+    <style> 
+    body {
+      background-color: #ECF1F5;
+      text-align: center;
+    }
+    .doge-image {
+      margin-top: 20px;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .cards {
+        text-align: center;
+        /*width: 90%;*/
+    }
+
+    .card-yelp {
+        padding: 2px 16px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+    }
+    .card-ios {
+        padding: 2px 16px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+    }
+    </style>
+
+</head>
 <header lang="en">
     <% include ../helpers/navbar %>
 </header>
@@ -10,7 +49,23 @@
     <div class="page-header">
         <h1>Projects</h1>
     </div>
-    <div class="content">
-         <p> Project</p>
+    <div class="cards">
+        <div class="card-yelp">
+            <div class="container">
+              <h4><b>Yelp</b></h4> 
+              <p > I created my own search engine using Java and Solr as a part of my Information Retrieval course. 
+                I developed a Tokenizer that parses a Yelp review JSON collection and an Indexer <br/>
+                to create an inverted index of review entries. I also created a front end program to run queries 
+                on the inverted index that utilizes a sentiment based ranking function to present the results to the user.</p>
+            </div>
+        </div>
+        <div class="card-ios">
+            <div class="container">
+              <h4><b>iOS Running Application</b></h4> 
+              <p > I created an iOS mobile application using XCode to store a user's running data.
+                   The application connects to a Firebase database to store the information. <br/>
+                    The user is able to retrieve and calculate statistics on their various running acheivements.</p>
+            </div>
+        </div>
     </div>
 </main>
